@@ -4,11 +4,12 @@ namespace Hooks
 {
     void Install() noexcept;
 
-    class MainUpdate
+    class Actor__SetMaximumMovementSpeed
     {
     public:
-        static i32 Thunk() noexcept;
+        static float Thunk(RE::Actor*) noexcept;
 
         inline static REL::Relocation<decltype(&Thunk)> func;
     };
+
 } // namespace Hooks

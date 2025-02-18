@@ -7,7 +7,7 @@ void Settings::LoadSettings() noexcept
     CSimpleIniA ini;
 
     ini.SetUnicode();
-    ini.LoadFile(R"(.\Data\SKSE\Plugins\PluginName.ini)");
+    ini.LoadFile(R"(.\Data\SKSE\Plugins\DragonsongDLL.ini)");
 
     debug_logging = ini.GetBoolValue("Log", "Debug");
 
